@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<head>
+		<meta charset="iso-8559-1"/>
+		<meta name ="description" content = "Pagina de ensenansa html 5"/>
+		<meta name="keywords" content ="html5, css3, Javascript, diseno web"/>	
+		<title>Segunda pagina de programacion en HTML5</title> <!--title indica el nombre que aparecera en la barra de inicio y titulo -->
+		<link rel="stylesheet" href="mihojadeestilos.css"/><!--link hace referencia a la hoja de estilos -->
+		<style>/*En este caso queremos cambiar la barra lateral de esta pagina, sin modificar el css para TODAS LAS PAGINAS indexadas*/
+			#barraLateral{
+				background-color: #F00; 
+			}
+		</style>
+
+	</head>
+	<body>
+		<header id="cabeceraWeb"> <!--id identifica este header en particular dentro de la hoja de estilo-->
+			<h1>Cabecera</h1>
+		</header>
+
+		<nav id="navegacionPrincipal">
+			<ul> <!--las etiquetas UL se utilizan para construir listas desordenadas-->
+				<li>Quienes somos</li><!--LI pone los puntos en las listas-->
+				<li style="background-color: #0F0;">Nuestros productos</li> <!--aqui SOLO modificamos el estilo de este li -->
+				<li>Contactanos</li>
+				<li>Precios</li>
+			</ul>
+		</nav>
+		
+		<aside id="barraLateral">
+			<blockquote>Primer elemento</blockquote>
+			<blockquote>Segundo elemento</blockquote>
+			<blockquote>Tercer elemento</blockquote>
+		</aside>
+
+		<section id="contenidoPrincipal"><!--en section va el contenido principal-->
+			<article><!--article sirve para agrupar cualquier tipo de contenido, informan al navegador, no se ven-->
+				<header><!--tambien se puede usar un header en un article-->
+					<hgroup><!--hgroup agrupa titulos y subtitulos, unicamente valido para etiquetas h-->
+						<h2>Titulo de la noticia 1</h2>
+						<h3>Subtitulo de la noticia 1</h3>
+					</hgroup>
+				</header>
+				<figure>
+					<img src="images/landscape.jpg"/><!--IMG nos permite colocar imagen indicando la ruta del recurso(jpg gif png)-->
+					<figcaption>Paisaje de ruta</figcaption><!---coloca el pie de imagen, siempre dentro de figure-->
+				</figure>
+					<p><mark>Noticia 1</mark></p><!--MARK resalta en amarillo -->
+					<p>Seguimos hablando de <em>noticia 1</em></p><!--EM pone en cursiva un texto-->
+					<p>Terminamos de hablar de la <strong>noticia 1</strong></p><!--STRONG pone en negrita y da importancia a un texto, antes se usaba b-->
+				<footer><!--tambien podemos usar un footer en un article-->
+					<p>Comentarios de usuarios:</p>
+				</footer>
+			</article>
+		
+			<article>
+				<header>
+					<h2>Titulo de la noticia 2</h2>
+				</header>
+					<p><cite>Lo que el viento se llevo</cite></p><!--CITE es para citar peliculas, musica, libros-->
+					<p>Una de las peliculas mas largas de la historia del cine es <cite>Lo que el viento se llevo</cite></p>
+					<p>Terminamos de hablar de la noticia 2</p>
+				<footer>
+					<p>Comentarios de usuarios:</p>
+				</footer>
+
+			</article>
+
+			<article>
+				<header>
+					<hgroup>
+						<h2>Titulo de la noticia 3</h2>
+						<h3>Subtitulo de la noticia 3</h3>
+					</hgroup>
+					<time datetime="2021/01/31" pubdate>Noticia publicada el dia 31/01/2021</time><!--TIME DATETIME indica una fecha al navegador, y sirve para los buscadores--> 
+				</header>
+					<p>Noticia 3</p>
+					<p>Seguimos hablando de noticia 3</p>
+					<p>Terminamos de hablar de la noticia 3</p>
+				<footer></footer>
+			</article>
+		</section>
+
+		<footer id="piePrincipal">
+			<small>Derechos reservados</small> <!--SMALL se usa para ubicar textos legales-->
+			<address>el 03435454564576</address> <!--ADDRESS se usa para indicar direccion, telefono, siempre va en el footer-->
+		</footer>
+
+
+	</body>
+</html>

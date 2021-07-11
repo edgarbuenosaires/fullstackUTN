@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Documento sin titulo</title>
+	<script src="V12 JavaScript_filed.js"></script>
+	<!--De esta forma enlazo un archivo externo donde esta el codigo JavaScript -->
+	<script>
+		alert("Hola que hay de nuevo viejo?");/*si el JS esta en el head, se ejecutara antes de la carga de la pagina, al igual que en
+		CSS se puede poner el codigo JS en varias partes dentro de la codificacion de la pagina.*/
+	</script>
+	<!--Lo habitual es que el scipt este antes del CSS, porque se puede hacer referencia desde el JS al CSS-->
+
+
+</head>
+
+<body>
+	<p onclick="alert('Hola que hay de nuevo?');">Estamos estudiando JavaScript</p>
+	<!--El codigo JS puede ir en una sola etiqueta, como en este caso, se abre una ventana que inutiliza todo el fondo hasta que se
+		precione aceptar. OnClic es un evento, un desencadenante de una accion. En JS todas las sentencias terminan en punto y coma-->
+	<p onclick="saludo()" ;>Si haces click aqui se llamara a la funcion saludo</p>
+	<p onmouseover="movimientoderaton()" ,>Move el raton por aqui</p>
+
+</body>
+
+</html>

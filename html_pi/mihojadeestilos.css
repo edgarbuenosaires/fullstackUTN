@@ -1,0 +1,34 @@
+body /*body es un selector de etiquetas*/{
+} 
+
+#cabeceraWeb{
+	background-color: #00F;
+}
+
+#navegacionPrincipal{
+	background-color: #F00;
+}
+
+#barraLateral{
+	background-color: #0F0;
+	float: left;/*float hace que la barra lateral se ubique en este caso a la isquierda.*/
+	height: 1005px;/*con height estiramos el alto, para que ocupe alto total*/
+}
+
+#contenidoPrincipal{
+	background-color: #606;
+	margin-left: 210px;/*aplica un margen isquierdo, lo suficientemente grande para sobrepasar la barra lateral que flota*/
+	padding-left: 15px;/*ubica el texto 15 pixeles separado del borde isquierdo de la caja*/
+	padding-top: 15px;/*ubica el texto 15 pixeles separado del borde superior de la caja*/
+
+}
+
+#piePrincipal{
+	background-color: #FF0;
+	clear: both;/*Separa el pie para que ni la barra lateral, ni la navegacion principal lo pise*/
+	margin-top: 10px;/*toma distancia de la etiqueta de arriba en 10 pixeles*/
+}
+li /*aplica color a todoas las etiquetas li, sin usar id*/{
+	background-color: #FF0;
+	display: inline;/*ubica las etiquetas en horizontal*/
+}

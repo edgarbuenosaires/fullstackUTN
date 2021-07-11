@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content=Type" content="text/html; charset=utf-8">
+	<title>Documento sin titulo</title>
+	<style>
+		#principal{
+			width: 500px; /*Estable el ancho*/
+			/*background-color: #00F; fondo de la caja en azul*/
+			background: -moz-linear-gradient(top, #00F, #3FF);/*Aplicamos degradado a la caja, enfocado en Firefox (moz), que va desde arriba color hasta abajo color*/
+			background: -webkit-linear-gradient(top, #00F, #3FF);/*Aplicamos degradado a la caja, enfocado en Google Chrom (webkit), que va desde arriba color hasta abajo color*/
+			background: -ms-linear-gradient(top, #00F, #3FF);/*Aplicamos degradado a la caja, enfocado en Internet Explorer (ms), que va desde arriba color hasta abajo color*/
+			background: -o-linear-gradient(top, #00F, #3FF);/*Aplicamos degradado a la caja, enfocado en Opera (0), que va desde arriba color hasta abajo color*/
+			/*DEGRADADO RADIAL*/
+			/*background: -webkit-radial-gradient(center, circle, #F00, #CF0);/*Aplicamos degradado radial a la caja, enfocado en Google Chrom (webkit), que va desde el centro CENTER, o elipse con ELLIPSE*/
+			text-align: center; /*Alinea el texto en el centro*/
+			margin: 15px auto;/*Alinea la caja en el centro y coloca 15px por arriba y por abajo*/
+			padding: 15px;/*Ubica el texto 15 px de los bordes de la caja, por lso 4 lados*/
+			border: 3px solid #F00; /*Se agrega un borde a la caja*/
+			border-radius: 15px; /*redondea los bordes de la caja*/
+			box-shadow: #F999 10px 10px 10px;/*1er medida, desplazamiento horizontal, 2da desplazamiento vertical, 3ra difuminzacion*/ 
+			/*outline: 2px dashed #00F; /*Aplica un borde exterior a la caja con guiones
+			outline-offset: 15px; /*Aleja el borde de la caja en 15 px*/
+			/*-webkit-transform:scale(1.5);/*Aumenta en escala el elemento a 150% en este caso*/
+			/*-webkit-transform:rotate(3deg);/*Rota el elemento 30 grados*/
+			/*-webkit-transform:skew(30deg);/*Cambia la perspectiva unos grados*/
+			-webkit-transition:-webkit-transform 1s ease 0.5s;/*El efecto transicion va a durar un segundo y comienza 0.5 segundos despues de haber apoyado el raton en la caja*/
+		}
+		#principal:hover{/*Es el cambio que se produce cuando pasa el raton por encima*/
+			-webkit-transform:rotate(3deg);/*Rota el elemento 30 grados*/
+		}
+		@font-face{
+			font-family: 'MiPropiaFuente'; /*Indicamos el nombre de la fuente que subimos al servidor y la ubicacion url donde se encuentra el archivo.*/
+			src:url('BAUHS93.TTF')/*Se requiere obligatoriamente que la fuente este en la raiz del servidor y no dentro de una carpeta*/;
+		}
+		#titulo{
+			font:bold 36px 'MiPropiaFuente';/*texto en negrita, con fuente y tamano*/
+			text-shadow: #0F0 3px 3px 5px;/*1er medida, desplazamiento horizontal, 2da desplazamiento vertical, 3ra difuminzacion*/ 
+			color: rgba(0,0,0,0.7); /*Se le da valor a cada color R, G, B, A (significa nivel de transparaencia que va de 0(transparente) a 1(complemtamente opaco)*/
+
+		}
+	</style>
+</head>
+<body>
+	<header id="principal">
+		<span id="titulo">Estilos CSS3</span><!--span se utiliza para aplicar estilo a palabras individuales o grupo da palabras, dentro de un p por ejemplo-->
+	</header>
+
+</body>
+</html>

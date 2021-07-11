@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content=Type" content="text/html; charset=utf-8">
+	<title></title>
+	<style>/*Debtri dek style podemos realizar estilos igual que en la hoja de css*/
+		p[name="misElementos"]{ /*el selector apunta este estilo a aquellos elementos que tengan la etiqueta name y se lo aplicamos a Hola*/
+			color: #F00;
+		}
+
+		/*OTRA FORMA DE HACERLO, aplicada a todos los names que comiencen con "mis"*/
+		p[name^="los"]{
+			color: #009900;
+		}
+
+		/*OTRA FORMA DE HACERLO, aplica a los que terminen en "tus*/
+		p[name$="tus"]{
+			color: #0000ff;
+		}
+
+		/*OTRA FORMA DE HACERLO, aplica a los names que tengan en cualquier parte un ilu*/
+		p[name*="ilu"]{
+			color: #cc7a00;
+		}
+
+		p:nth-child(5){/*SE usa seudoclases para aplicar al elemento N dentro de los hijos de esa clase "p"*, en este caso a Lunes y Melon, que son el 5to elemento hijo de la case p*/
+			color: #F00;
+			/*Al cambiar 5 por "odd" se aplicara a todos los elmentos impares*/
+			/*Al cambiar 5 por "even", se aplicara a todos los elementos pares*/
+		}
+		p:first-child{/*Aplica al primer hijo de cada elemento p*/
+			color: #F00;
+			/*Con "last-child" se ejecuta igual sobre el ultimo hijo*/
+			/*Con "oly-child" se aplica el formado a las etiquetas que son hijas unicas*/
+		}
+
+
+	</style>
+</head>
+<body>
+	
+	<p name="misElementos">Hola</p> <!--aplicamos el estilo que esta en el head para "misElementos" -->
+	<p name="elementus">Adios</p>
+	<p name="losEstilos">Febrero</p>
+	<p name="Stilus">Diciembre</p>
+	<p>Lunes</p>
+
+	<ol>
+		<li>Frutas</li>
+		<li><p>MAnzanas</p></li>
+		<p>Limon</p>
+		<p>Pera</p>
+		<p>Melon</p>
+	</ol>
+	<p>Hasta pronto</p>
+
+
+</body>
+</html>
