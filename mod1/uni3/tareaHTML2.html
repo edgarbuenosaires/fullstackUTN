@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>CONTACTO</h1>
+    </header>
+
+    <main>
+        <form action="" method="">
+            <p>
+                <label for="nombre">Nombre y apellido</label>
+                <input type="text" name="nobre" id="nombre">
+            </p>
+            <p>
+                <label for="email">E-mail</label>
+                <input type="email" name="mail" id="mail">
+            </p>
+            <label for="tipoContato">Motivo del contato</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="motivo[]" value="frontend" id="front">
+                        <label for="front">Front End</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="motivo[]" value="backend" id="back">
+                        <label for="back">Back End</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="movito[]" value="otro" id="otro">
+                        <label for="otro">Otro</label>
+                    </li>
+                </ul>
+            <p>
+                <label for="coentarios">Comentario</label>
+                <textarea name="comentarios" id="" cols="50" rows="10"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </p>
+        </form>
+    </main>
+
+    
+</body>
+</html>
