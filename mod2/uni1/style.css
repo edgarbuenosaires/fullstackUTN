@@ -1,0 +1,45 @@
+header{
+    background: linear-gradient(to bottom, blue, white);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  
+}
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: rgb(151, 151, 151) 5px;
+}
+section{
+    background: linear-gradient(to top, blue, white);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+aside{
+    background: linear-gradient(to top, blue, white);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer{
+    background: gray;
+    text-align: center;
+    font-style: italic;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
+}
