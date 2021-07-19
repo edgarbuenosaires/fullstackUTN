@@ -23,6 +23,7 @@ img{
 
 p{
     font-family:Georgia, 'Times New Roman', Times, serif;
+ 
     margin-top: 20px;
     margin-right: 30px;
     margin-left: 30px;
@@ -31,3 +32,12 @@ p{
 
 
 body { background-color: #ebb4b4; }
+
+.resaltar{
+   
+    font-style: italic;
+}
+
+.importante{
+    font-weight: bold;
+}
