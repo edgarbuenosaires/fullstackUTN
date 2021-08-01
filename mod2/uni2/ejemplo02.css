@@ -1,0 +1,7 @@
+.caja{
+    background-color: yellow;
+    column-count: 3;
+}
+.caja p{
+    margin: 0px;
+}
