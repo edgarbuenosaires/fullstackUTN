@@ -1,0 +1,27 @@
+.rojo{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+    margin-bottom: 30px;
+    /* margin-left: 20px; me permite mover la caja a la isquierda */   
+    padding: 20px; /*genera el margen interno de la caja, pero se aplica a los 4 lados. /
+    /* padding: 5px 10px 15px 20px; se aplican valores a cada lado, segun orden del reloj */    
+    /* padding: 5px 10px, 6 px; Se aplica 5 arriba / 10 laterales / 6 abajo */
+    /* padding: 10px 20px; Se aplican 10 arriba y 10 abajo y 20 a cada lateral. */
+    /* padding-top: 20px; especiico un lado */
+    border: 5px solid black;
+    box-sizing: border-box; /* Respeta el tamaño de la caja fijado en widthy height */
+}
+
+.azul{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    padding: 20px;
+    color: white;
+    /* border-radius: 20px; Tambien se pueden diferenciar cada borde con distinto valor */
+    border-radius: 20px 0; /* Dos esquinas son redondeadas y dos no*/
+    box-shadow: 15px 10px 5px green; /* Parametros: eje X, eje Y, desenfocado y color*/
+
+}
