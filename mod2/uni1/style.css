@@ -26,7 +26,7 @@ section{
 
 aside{
     box-shadow: 5px 5px 5px gray;
-    background: linear-gradient(to top, blue, white);
+    background: linear-gradient(to top, rgb(23, 23, 209), white);
     margin-left: 20px;
     margin-right: 20px;
     padding-top: 10px;
