@@ -2,11 +2,12 @@ div{
     width: 200px;
     height: 200px;
     background-color: yellow;
+    cursor: pointer; /*TRansforma el curson en una manito */
 }
 
-/* div:hover {
+div:hover {
   background-color: #F89B4D;
-} */
+}
 
 /* :first-child y :last-child */
 /* :nth-child()  */
@@ -18,12 +19,16 @@ span{
 }
 
 
-/* span::after{
- content: 'despues';
+span::after{
+ content: ' despues';
  background-color: red;
-} */
-/* 
+ color: white;
+ font-weight: bold;
+}
+
 span::before{
- content: 'antes';
+ content: 'antes ';
  background-color: blue;
-} */
+ color: white;
+ font-weight: bold;
+}
