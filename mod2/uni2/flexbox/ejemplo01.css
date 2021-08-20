@@ -1,5 +1,6 @@
 .contenedor{
 	background-color: blue;
+	/*SE DEBE SELECCIONAR "INLINE-FLEX (limitado a los items)" O " "FLEX (todo el ancho)"*/
 	/* display: inline-flex; */
 	display: flex;
 }
