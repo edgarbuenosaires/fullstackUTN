@@ -2,13 +2,20 @@
 	background-color: blue;
 	height: 500px;
 	display: inline-flex;
+	/* FLEX WRAP WRAP distribuye las cajas por el contenedor MULTILINEA*/
 	flex-wrap: wrap;
-	/*align-content: flex-start;*/
-	/*align-content: flex-end;*/
-	/*align-content: center;*/
-	/*align-content: stretch;*/
-	/*align-content: space-around;*/
-	/*align-content: space-between;*/
+	/* FLEX START se ajustan las cajas al contenido */
+	align-content: flekx-start;
+	/* FLEX END lleva los items al fondo del contenedor */
+	/* align-content: flex-end; */
+	/* CENTER dispone los items en el centro del contenedor */
+	/* align-content: center; */
+	/* STRETCH empareja las cajas al contenedor */
+	align-content: stretch;
+	/* SPACE AROUND distribuye los espacios equitativamente */
+	/* align-content: space-around; */
+	/* SPACE BETWEEN distribuye los epacios de manera mas bonita */
+	/* align-content: space-between; */
 }
 
 .item{
