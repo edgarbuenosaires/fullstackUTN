@@ -2,10 +2,15 @@
 	height: 500px;
 	background-color: blue;
 	display: flex;
-	align-items: flex-start;
+	/* FLEX START alinea las cajas al principio, viene por defecto */
+	/* align-items: flex-start; */
+	/* FLEX END alinea las cajas abajo */
 	/* align-items: flex-end; */
+	/* CENTER alinea las cajas al centro */
 	align-items: center;
+	/* LA PROFE BORRO LA SIGUIENTE */
 	/* align-items: stretch; */
+	/* LA PROFE BORRO LA SIGUIENTE */
 	/* align-items: baseline; */
 }
 
