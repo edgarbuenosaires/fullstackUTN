@@ -1,10 +1,11 @@
 .contenedor{
 	background-color: blue;
 	display: inline-flex;
-	flex-direction: row;
-	/*flex-direction: row-reverse; */
-	/*flex-direction: column;*/
-	/*flex-direction: column-reverse;*/
+	/* DIRECCION POR DEFECTO ROW*/
+	flex-direction: row; 
+	/* flex-direction: row-reverse; */
+	/* flex-direction: column; */
+	/* flex-direction: column-reverse; */
 
 }
 
