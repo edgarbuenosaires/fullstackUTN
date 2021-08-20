@@ -1,9 +1,12 @@
 .contenedor{
 	background-color: blue;
 	display: inline-flex;
-	 flex-wrap: nowrap; 
-	/*flex-wrap: wrap;*/ 
-	/* flex-wrap: wrap-reverse;*/ 
+	/*DISPLAY FLEX WRAP NOWRAP VIENE POR DEFECTO (quedan las cajas una al lado de la otra)*/
+	 /* flex-wrap: nowrap;  */
+	 /*DISPLAY FLEX WRAP WRAP (las cajas se acomodan para entrar en la pantalla)*/
+	/* flex-wrap: wrap;  */
+	/*DISPLAY FLEX WRAP WRAP REVERSE (las cajas se acomodan en la pantalla de la ultima a la primera*/
+	flex-wrap: wrap-reverse; 
 }
 
 .item{
