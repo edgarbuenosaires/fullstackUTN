@@ -14,10 +14,15 @@
     display: inline-flex;
     flex-direction:row-reverse;
     border-color: black;
+    align-items: center;
 }
 
 .ejecicio3{
-    background-color: hotpink;
+    border-style:solid;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
 }
 
 #verde{
