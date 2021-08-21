@@ -4,6 +4,8 @@
 	/* DIRECCION POR DEFECTO ROW*/
 	flex-direction: row; 
 	/* flex-direction: row-reverse; */
+
+	/* DIRECCION EN COLUMNAS */
 	/* flex-direction: column; */
 	/* flex-direction: column-reverse; */
 
