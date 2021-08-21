@@ -8,11 +8,10 @@
 }
 
 .ejercicio2{
-  
+    height: 600px;
     border-style: solid;
-    border-color: black;
-    
-    display: flex;
+    border-color: black;    
+    display: inline-flex;
     flex-direction:row-reverse;
     border-color: black;
 }
