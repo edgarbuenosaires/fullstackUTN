@@ -2,7 +2,9 @@
 	border: 2px solid black;
 	width: 450px;
 	height: 450px;
+	/* MARGIN 0 AUTO coloca al medio de la pantalla al contenedor */
     margin: 0 auto;
+	/* DISPLAY FLEX ajusta el contenedor a los items */
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -11,7 +13,9 @@
 	width: 150px;
 	height: 150px;
 	display: flex;
+	/* JUSTIFY CONTENT CENTER centra entre derecha e isquierda */
 	justify-content: center;
+	/* ALIGN ITEMS CENTER centra entre arriba y abajo */
     align-items: center;
     
     
