@@ -1,8 +1,14 @@
 .contenedor{
 	background-color: blue;
+<<<<<<< HEAD
 	/* EL DISPLAY ES UNO O EL OTRO: */
 	display: inline-flex; /*Ajusta el contenedor al contenido*/
 	/* display: flex; */ /*Ajusta el contenedor al ancho de la pantalla*/
+=======
+	/*SE DEBE SELECCIONAR "INLINE-FLEX (limitado a los items)" O " "FLEX (todo el ancho)"*/
+	/* display: inline-flex; */
+	display: flex;
+>>>>>>> 598ea3a0e8f1133d18cb8f8365323b89bde6b175
 }
 
 .item{

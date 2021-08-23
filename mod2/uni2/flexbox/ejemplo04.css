@@ -1,12 +1,17 @@
 .contenedor{
 	background-color: blue;
 	display: flex;
-	/*justify-content: flex-start;*/
-	/*justify-content: flex-end;*/
-	/*justify-content: center;*/
+	/*JUSTIFICACION DEL CONTENIDO, FLEX START viene por defecto*/
+	/* justify-content: flex-start; */
+	/*flex end lleva todos los items al fondo a la derecha*/
+	/* justify-content: flex-end; */
+	/* center coloca todos los items en el centro */
+	/* justify-content: center; */
+	/* splace between los distribuye por todo el contenedor */
 	/* justify-content: space-between; */
+	/* space around distribuye los items y deja espacio de cada lado */
 	/* justify-content: space-around; */
-	/* justify-content: space-evenly; */
+	justify-content: space-evenly;
 }
 
 .item{
