@@ -1,5 +1,6 @@
 .contenedor{
 	background-color: blue;
+	/* DISPLAY COLOCA LOS ELEMENTOS EN HORIZONTAL */
 	display: inline-flex;
 	flex-direction: row;
 	/*flex-direction: row-reverse; */

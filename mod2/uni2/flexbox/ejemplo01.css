@@ -1,7 +1,8 @@
 .contenedor{
 	background-color: blue;
-	/* display: inline-flex; */
-	display: flex;
+	/* EL DISPLAY ES UNO O EL OTRO: */
+	display: inline-flex; /*Ajusta el contenedor al contenido*/
+	/* display: flex; */ /*Ajusta el contenedor al ancho de la pantalla*/
 }
 
 .item{
