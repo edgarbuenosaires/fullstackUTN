@@ -21,3 +21,22 @@ body{
     height: 200px;
     transform:rotate(35deg);
 }
+
+.cuadradito{
+    background-color: fuchsia;
+    width: 200px;
+    height: 200px;
+    /*scale agranda a 250% en el caso de X y 400% en el caso de Y*/
+    transform: scale(2.5,4);
+}
+.circulito{
+    position:absolute;
+	top: 500px;
+	left: 500px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #b85cb4;
+    /*translate: util para mover minimamente un objeto*/
+    transform: translate(50px, 100px);
+}
