@@ -31,7 +31,10 @@
     height: 200px;
     font-size: 40px;
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 
 }
 #rojo{
@@ -40,7 +43,9 @@
     height: 200px;
     font-size: 40px;
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #azul{
     background-color: blue;
@@ -48,6 +53,8 @@
     height: 200px;
     font-size: 40px;
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
