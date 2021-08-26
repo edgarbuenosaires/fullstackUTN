@@ -2,9 +2,11 @@
      width: 100px;
      height: 100px;
      border-radius: 50%;
-     background: red;
+     /* background: red; */
      animation-name: MiAnimacion;
-     animation-duration: 4s;  
+     animation-duration: 10s;
+     /* Si quito el backgraound RED, va del blanco al rojo y desaparece, por eso pongo fill mode forwards para que quede el fondo rojo */
+     animation-fill-mode: forwards; 
 }
 
 @keyframes MiAnimacion {
