@@ -4,9 +4,10 @@ height: 80px;
 background-color: #5aaafc;
 
 animation-name: MiAnimacion;
+/* Duration: establece el tiempo total de la animacion */
 animation-duration: 3s;
+/* Fill Mode: hace que el TO de la animacion permanezca y no desaparezca. */
 animation-fill-mode: forwards;
-
     }
 
 @keyframes MiAnimacion {
