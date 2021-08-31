@@ -60,4 +60,22 @@ aside {
 		justify-content: space-around;
 		font-size: 100%;
 	}
+	section {
+		background: #F1F2C0;
+		padding-top: 10px;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 10px;
+		margin:0;
+		width: 100%;
+	}
+	aside {
+		background: #CCC59E;
+		padding-top: 10px;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 10px;
+		margin:0;
+		width: 100%;
+	}
 }
