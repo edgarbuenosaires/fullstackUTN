@@ -45,10 +45,12 @@ aside {
 	}
 	#contenedor{
 		width: 100%;
+		background-color: #8ea68e;
 	}
 	nav{
 		float:none;
-		width:100%;	
+		width:100%;
+		background-color: #ffcc66;
 	}
 	nav ul {
 		font-weight: bold;
@@ -61,6 +63,7 @@ aside {
 		font-size: 100%;
 	}
 	section {
+		float:none;
 		background: #F1F2C0;
 		padding-top: 10px;
 		padding-left: 25px;
@@ -70,11 +73,13 @@ aside {
 		width: 100%;
 	}
 	aside {
+		float:none;
 		background: #CCC59E;
 		padding-top: 10px;
-		padding-left: 25px;
+		padding-left: 25px;	
 		padding-right: 25px;
 		padding-bottom: 10px;
+		float:none;
 		margin:0;
 		width: 100%;
 	}
