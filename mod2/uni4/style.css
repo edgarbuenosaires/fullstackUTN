@@ -1,0 +1,30 @@
+.container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: cornflowerblue;
+    }
+
+img {
+    padding-top: 20px;
+    width: 60%;
+    margin: auto;
+    display: block;
+    padding-bottom: 20px;
+    }
+
+
+.container h1{
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px gray;
+}
+#propuesta{
+    background-color: whitesmoke;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.accordion{
+    padding-top: 15px;
+}
