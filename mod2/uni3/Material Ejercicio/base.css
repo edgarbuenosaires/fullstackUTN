@@ -71,6 +71,7 @@ aside {
 		padding-bottom: 10px;
 		margin:0;
 		width: 100%;
+		box-sizing: border-box;
 	}
 	aside {
 		float:none;
@@ -82,5 +83,6 @@ aside {
 		float:none;
 		margin:0;
 		width: 100%;
+		box-sizing: border-box;
 	}
 }
