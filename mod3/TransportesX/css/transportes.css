@@ -3,12 +3,10 @@ body{
     font-size: 16px;
     line-height: 20px;
 }
-
 header{
     background-color: #2e64a1;
     padding: 1em 0;
 }
-
 header h1{
     color: white;
     font-size: 2.5em;
@@ -18,23 +16,19 @@ header h1{
     position: relative;
     bottom: 30px;
 }
-
 nav{
     background-color: #6da9ed;
     margin-bottom: 2em;
 }
-
 nav ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 nav ul li{
     display: inline-block;
     width: 16.3%;
 }
-
 nav ul li a{
     color: white;
     text-decoration: none;
@@ -42,7 +36,6 @@ nav ul li a{
     display: block;
     padding: 0.2em 0.4em;
 }
-
 nav ul li a:hover{
     background-color: rgba(0,0,0,0.3);
 }
@@ -66,11 +59,9 @@ h2{
     font-weight: 400;
     margin: 0 0 1em;
 }
-
 .left{
     float: left;
 }
-
 .right{
     float: right;
 }
@@ -80,16 +71,13 @@ h2{
 .columnas{
     overflow: hidden;
 }
-
 .bienvenidos, .testimonios{
     box-sizing: border-box;
 }
-
 .bienvenidos{
     width: 75%;
     padding-right: 2em;
 }
-
 .testimonios{
     width: 25%;
 }
@@ -99,13 +87,12 @@ h2{
     padding: 1em;
 }
 
-testimonio .cita{
+.testimonio .cita{
     font-weight: bold;
     font-style: italic;
     font-size: 1.4em;
     display: block;
 }
-
 .testimonio .autor{
     font-size: 0.7em;
     text-align: center;
@@ -157,4 +144,57 @@ testimonio .cita{
 
 .persona:first-child{
     margin-left: 0;
+}
+.servicio .info h4{
+    color: #2e64a1;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 0.5em;
+}
+.servicio .info p{
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+.servicio{
+    border: 1px solid gray;
+    border-radius: 0.7em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+}
+.servicio .info{
+    width: 75%;
+}
+.servicio .info h4{
+    color: #2e64a1;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 0.5em;
+}
+.servicio .info p{
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+.servicio img{
+    border-radius: 0.8em;
+}
+.servicio:nth-child(even) img{
+    float: right;
+    margin: 0 0 0 1em;
+}
+.servicio:nth-child(even) .info{
+    float: left;
+}
+.servicio:nth-child(odd) img{
+    float: left;
+    margin: 0 1em 0 0;
+}
+.servicio:nth-child(odd) .info{
+    float: right;
 }
