@@ -61,3 +61,16 @@ footer{
     width: 960px;
     margin: 0 auto;
 }
+h2{
+    color: #2e64a1;
+    font-weight: 400;
+    margin: 0 0 1em;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
