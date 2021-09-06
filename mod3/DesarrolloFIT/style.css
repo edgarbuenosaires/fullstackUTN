@@ -1,0 +1,12 @@
+header{
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+}
+footer{
+    background-color: green;
+    width: 980px;
+}
+footer h6{
+    font-style: italic;
+}

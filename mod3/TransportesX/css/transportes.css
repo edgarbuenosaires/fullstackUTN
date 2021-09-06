@@ -1,0 +1,202 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px; /*Interlineado*/
+}
+header{
+    background-color: #2e64a1;
+    padding: 1em 0; /*1em = 16px*/
+}
+header h1{
+    color: white;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 100; /*finita*/
+    display: inline-block; /*Lo pone en linea, junto a la imagen del logo, puede colocarse inline flex*/
+    position: relative; /*el texto flota 30px desde el bottom*/
+    bottom: 30px;
+}
+nav{
+    background-color: #6da9ed;
+    margin-bottom: 2em;
+}
+nav ul{
+    list-style: none; /*Saco el puntito de la lista*/
+    margin: 0; /*Se le saca el margin que viene por defecto*/
+    padding: 0; /*Se le saca el padding que viene por defecto*/
+}
+nav ul li{
+    display: inline-block;  /*Lo pone en linea, junto a la item anterior*/
+    width: 16.3%; /*al ser 6 botones, se distribuyen uno cada 16,3% del total de la barra*/
+}
+nav ul li a{
+    color: white;
+    text-decoration: none; /*Le quito el subrrayado a los vinculso*/
+    text-align: center;
+    display: block;
+    padding: 0.2em 0.4em;
+}
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+nav ul li a.activo{
+    background-color: #4c76a5;
+}
+footer{
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    padding: 3em 0; /*Es el alto del footer, el area griz*/
+    margin-top: 2em;
+    text-align: center;
+}
+.holder{
+    width: 960px; /*Ancho, si coloco max width cuando achico la pantalla se va moviendo hacia abajo*/
+    margin: 0 auto;
+}
+h2{
+    color: #2e64a1;
+    font-weight: 400;
+    margin: 0 0 1em;
+}
+.left{
+    float: left; /*Flotado a la isquierda*/
+}
+.right{
+    float: right; /*Flotado a la derecha*/
+}
+
+/* Inicio HOME */
+.homeing{
+    margin-bottom: 1.5em; /*Separo la imagen de lo que viene despues*/
+}
+.homeing img{
+    max-width: 100%;
+}
+.columnas{
+    overflow: hidden;
+}
+.bienvenidos, .testimonios{
+    box-sizing: border-box; /*Se redimenciona el tema de la cajas*/
+}
+.bienvenidos{
+    width: 75%; /*Ancho que ocupa el espacio de bienvenidos*/
+    padding-right: 2em;
+}
+.testimonios{
+    width: 25%; /*Ancho que ocupa el espacio de testimonios*/
+}
+.testimonio{
+    background-color: #ccc;
+    padding: 1em;
+}
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.4em;
+    display: block;
+}
+.testimonio .autor{
+    font-size: 0.7em;
+    text-align: center;
+    margin: 1em 0;
+    display: block;
+}
+/* Fin HOME */
+
+/* Inicio NOSOTROS */
+.historia p{
+    font-size: 0.8em;
+}
+.personas{
+    overflow: hidden;
+}
+.persona{
+    width: 18%;
+    border: 1px solid gray;
+    border-radius: 0.25em;
+    float: left;
+    margin-left: 2.25%;
+    box-sizing: border-box;
+}
+.persona{
+    text-align: center;
+}
+.persona img{
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0, 0, 0.5);
+    margin: 0.8em 0 1em;
+    max-width: 70%;
+}
+.persona h5{
+    font-size: 0.9em;
+}
+.persona h6{
+    font-size: 0.8em;
+    font-style: italic;
+}
+.persona p{
+    font-size: 0.7em;
+    color: #444;
+    margin: 0 1em 1em;
+}
+.persona:first-child{
+    margin-left: 0;
+}
+/* Fin NOSOTROS */
+
+/* Inicio SERVICIOS */
+.servicio .info h4{
+    color: #2e64a1;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 0.5em;
+}
+.servicio .info p{
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+.servicio{
+    border: 1px solid gray;
+    border-radius: 0.7em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+}
+.servicio .info{
+    width: 75%;
+}
+.servicio .info h4{
+    color: #2e64a1;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 0.5em;
+}
+.servicio .info p{
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+.servicio img{
+    border-radius: 0.8em;
+}
+.servicio:nth-child(even) img{
+    float: right;
+    margin: 0 0 0 1em;
+}
+.servicio:nth-child(even) .info{
+    float: left;
+}
+.servicio:nth-child(odd) img{
+    float: left;
+    margin: 0 1em 0 0;
+}
+.servicio:nth-child(odd) .info{
+    float: right;
+}
+/* Fin SERVICIO */
