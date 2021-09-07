@@ -1,12 +1,22 @@
 header{
-    background-color: red;
+    position: fixed;
+    top: 0px;
+    background-color: orangered;
     text-align: center;
-    padding: 10px;
+    height:60px;
+    width: 30%;
 }
 footer{
-    background-color: green;
-    width: 980px;
+    background-color: gray;
+    width: 100%;
+    text-align: center;
+ 
 }
 footer h6{
     font-style: italic;
+}
+.horizontal{
+    position: fixed;
+    background-color: blueviolet;
+
 }
