@@ -6,39 +6,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DesarrolloFIT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>DesarrolloFIT</h1>
-    </header>
-    <nav class="horizontal">
-        <ul>
-            <li>Actitud FIT</li>
-            <li>Alimentacion</li>
-            <li>Actividad Fisica</li>
-        </ul>
-    </nav>
-    <nav class="vertical">
-        <ul>
-            <li>Experiencias</li>
-            <li>Servicios</li>
-            <li>Contacto</li>
-        </ul>
-    </nav>
-    <main>
-        DESARROLLO
+    <!-- El container se ajusta dependiendo el dispositivo -->
+    <div class="container" style="background-color: yellow;">
+        <!-- Fila BARRA DE NAVEGACION -->
+        <div class="row">
+            <div class="col-4">
+                <header id="marca">
+                    <h1><a href="index.html">DesarrolloFIT</a></h1>
+                </header>
+            </div>
+            <nav class="col-8">
+                <ul>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="actitudFit.html">Actitud FIT</a></li>
+                    <li><a href="experiencia.html">Experiencias</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Fila ESLOGAN -->
+        <div class="row">
+            <div id="slogan">
+                <h1>Ponte en forma con nosotros</h1>
+            </div>
+        </div>
+        <!-- Fila LINKS -->
+        <div class="row">
+            <div class="col-4">
+                <h2><a href="dietas.html">Dietas Saludables</a></h2>
+            </div>
+            <div class="col-4">
+                IMAGEN
+            </div>
+            <div class="col-4">
+                <h2>Entrenamiento Fisico</h2>
+            </div>
 
-    </main>
-    <aside>
-        Testimonios
-    </aside>
-    <footer>
-        <h6>DesarroloFIT by DesarroloIT</h6>
-        <h6>Edgardo Aguirre &copy; 2021</h6>
-    </footer>
-
+        </div>
+        <!-- Fila TESTIMONIOS -->
+        <div class="row">
+            <div id="testimonios">
+                <div>
+                    <h3>TESTIMONIO 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, debitis
+                        quas!
+                        Nisi eos est, modi quas accusamus quidem mollitia harum cumque amet, numquam repellendus,
+                        provident magnam nobis ab recusandae ratione.</h3>
+                </div>
+                <div>
+                    <h3>TESTIMONIO 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore
+                        doloribus,
+                        non nemo ratione fugit vitae? Dicta veniam, expedita perspiciatis earum numquam esse nulla
+                        officiis officia! Quis error nisi nobis.</h3>
+                </div>
+                <div>
+                    <h3>TESTIMONIO 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, mollitia fuga.
+                        Exercitationem dignissimos aspernatur corrupti asperiores facilis voluptas nesciunt saepe
+                        sed
+                        illo nulla! Quidem quas libero eveniet dicta vero adipisci!</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Fila FOOTER -->
+        <div class="row">
+            <footer>
+                <h3>DesarroloFIT</h3>
+                <h4>Copyright 2021. Todos los derechos reservados por Edgardo Aguirre &copy;</h6>
+            </footer>
+        </div>
+    </div>
+    <!-- Se agrega el componente JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
