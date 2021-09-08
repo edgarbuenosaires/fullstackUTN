@@ -1,10 +1,46 @@
-header{
-    position: fixed;
-    top: 0px;
-    background-color: orangered;
+
+nav{
+    background-color: black;
+    color: orange;
+    
+}
+nav ul{
+    list-style: none; /*Saco el puntito de la lista*/
+    margin: 0; /*Se le saca el margin que viene por defecto*/
+    padding: 0; /*Se le saca el padding que viene por defecto*/
+}
+nav ul li{
+    display: inline-block;  /*Lo pone en linea, junto a la item anterior*/
+    width: 24.5%; /*al ser 4 botones, se distribuyen uno cada 16,3% del total de la barra*/
+}
+nav ul li a{
+    color: orange;
+    text-decoration: none; /*Le quito el subrrayado a los vinculso*/
     text-align: center;
-    height:60px;
-    width: 30%;
+    display: block;
+}
+nav ul li a:hover{
+    background-color: green;
+}
+nav ul li a.activo{
+    background-color: orange;
+    font-weight: 900;
+}
+#slogan{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    padding: 150px;
+}
+#marca{
+    background-color: black;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    font-style: italic;
+}
+#marca a{
+    color: white;
+    text-decoration: none; /*Le quito el subrrayado a los vinculso*/
 }
 footer{
     background-color: gray;
@@ -14,9 +50,4 @@ footer{
 }
 footer h6{
     font-style: italic;
-}
-.horizontal{
-    position: fixed;
-    background-color: blueviolet;
-
 }
