@@ -203,16 +203,17 @@ h2{
 
 /* Inicio GALERIA */
 .galeria .foto{
-    float: left;
+    display: inline-block; /*Se coloca una imagen al lado de la otra*/
     width: 18%;
+    float: left;
     margin: 1em 0 1em 2.5%;
     border: 1px solid #ddd;
-    padding: 0.3em;
-    box-sizing: border-box;
+    padding: 0.3em; /*Genera un borde blanco al rededor de las fotos*/
+    box-sizing: border-box; /*Para que no se sumen todos los padding y bordes*/
 }
 .galeria .foto img{
-    width: 100%;
-    display: block;
+    width: 100%; /*Se hace crecer la imagen para que ocupe todo el ancho de la cajita*/
+    display: block; /*Se acomoda para que quede un bloque, se entendio muy mal, pero bue*/
 }
 .galeria .foto:nth-child(5n+1){
     margin-left: 0;
