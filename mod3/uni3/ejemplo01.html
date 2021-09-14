@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Ejemplo de JS dentro de la misma pagina -->
+    <script type="text/javascript">
+        alert("Un mensaje de prueba")
+    </script>
+    <!-- Ejemplo de JS que llama a un archivo externo -->
+    <script type="text/javascript" src="js/codigo.js"></script>
+    <!-- Ejemplo de utilizacion de variables -->
+    <script type="text/javascript">
+        numero_1 = 3;
+        numero_2 = 1;
+        resultado = numero_1 + numero_2;
+    </script>
+    <!-- Ejemplo de utilizacion de variables NUMERICAS-->
+    <script type="text/javascript">
+        var iva = 16;
+        var total = 234.65;
+    </script>
+    <!-- eEjemplo de utilizacion de variables CADENA DE CARACTERES -->
+    <script type="text/javascript">
+        var mensaje = "Bienvenido al curso";
+        var nombreProducto = 'Compu X';
+        var letraSeleccionada = 'F';
+    </script>
+    <!-- Ejemplo de Array-->
+    <script type="text/javascript">
+        //Usando Variables
+        var dia1 = "Lunes";
+        var dia2 = "Martes";
+        var dia3 = "Miercoles";
+        var dia4 = "Jueves";
+        var dia5 = "Viernes";
+        var dia6 = "Sabado";
+        var dia7 = "Domingo";
+        //Usando Array
+        var dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+        var diaSeleccionado = dias[0]; // diaSeleccionado = "Lunes"
+        var otroDia = dias[5]; // otroDia = "Sabado"
+    </script>
+    <!-- Ejemplo de VAR -->
+    <script type="text/javascript">
+        var i = "global";
+        function foo() {
+            i = "local";
+            console.log(i); // local
+        }
+        foo();
+        console.log(i); // local
+
+        var i = "global";
+        function foo() {
+            var i = "local"; //Otra variable local solo para esta funcion
+            console.log(i); // local
+        }
+        foo();
+        console.log(i); // global
+    </script>
+    <!-- Ejemplo de LET -->
+    <script type="text/javascript">
+        // 'i' es global y 'j' es variable local.
+        let i = 0;
+        function foo() {
+            i = 1;
+            let j = 2;
+            if (true) {
+                console.log(i); // 1
+                console.log(j); // 2
+            }
+        }
+        foo();
+        // delcaramos un varaible con let dentro den un bloque, dentro de una funcion
+        function foo() {
+            let i = 0;
+            if (true) {
+                let i = 1; // Seria otra variable 'i' solo para el bloque if
+                console.log(i); // 1
+            }
+            console.log(i); // 0
+        }
+        foo();
+    </script>
+    <!-- Ejemplo de Const -->
+    <script type="text/javascript">
+        const i = 0;
+        i = 1; //TypeError: Assignment to constant variable (Error al reasignar el valor de una constante)
+        // usando Objeto
+        const user = { name: 'Juan' };
+        user.name = 'Manolo';
+        console.log(user.name); // Manolo, el objeto asignado a la constante sufre un cambio,pero la variable apunta siempre al mismo objeto, por eso no da error.
+        // usando String
+        const usar = 'Juan';
+        user = 'Manolo'; // TypeError: Assignment to constant variable (Error al reasignar el valor de una constante)
+    </script>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <h1>hola</h1>
+</body>
+
+</html>
