@@ -1,0 +1,74 @@
+body{
+    margin:0px;
+}
+nav{
+    position: fixed;
+    color: orange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+	top: 0px;
+	height:60px;
+	width: 100%; /* lo damos formas de botonera*/
+}
+nav ul{
+    background-color: black;
+    list-style: none; /*Saco el puntito de la lista*/
+    margin: 0; /*Se le saca el margin que viene por defecto*/
+    padding: 0; /*Se le saca el padding que viene por defecto*/
+}
+nav ul li{
+    display: inline-block;  /*Lo pone en linea, junto a la item anterior*/
+    width: 19.5%;
+}
+nav ul li a{
+    color: orange;
+    text-decoration: none; /*Le quito el subrrayado a los vinculso*/
+    text-align: center;
+    display: block;
+    padding: 0.2em 0.4em;
+}
+nav ul li a:hover{
+    background-color:white;
+}
+#logo{
+    font-family: 'Righteous', cursive;
+    font-size: 1.5em;
+}
+.contenedor{
+    
+    width: 960px; 
+    margin: 0 auto;
+}
+#eslogan{
+    font-size: 1.5em;
+    text-align: center;
+    color: sandybrown;
+    font-family: 'Righteous', cursive;
+}
+main .contenedor{
+    background-color: black;
+    color: white;
+}
+#eslogan{
+    box-sizing: border-box;
+    margin-top: 58px;
+    padding: 150px;
+    width: 100%; /*Ancho que ocupa el espacio de bienvenidos*/
+}
+footer{
+    color: white;
+    background-color: gray;
+}
+.boxes{
+    margin: 0px;
+    width: 100%;
+    background-color: red;
+    
+    display: inline-flex;
+    flex-direction:row;
+    align-items: center;
+   
+}
+.box_a .box_b .box_c {
+    width: 33.33%;
+}
