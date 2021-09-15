@@ -38,6 +38,24 @@
             default: document.write('debe ingersar un valor comprendido entre 1 y 5');
         }
     </script>
+    <!-- Operador Ternario (es una simplificacion del if)-->
+    <script type="text/javascript">
+        var esMayor = edad >= 21 ? true : false;
+        var cuota = esMAyor ? 500 : 350;
+        // Es lo mismo que:
+        var esMayor, cuota;
+        if (edad >= 21) {
+            esMAyor = true;
+        } else {
+            esMayor = false;
+        }
+
+        if (esMayor) {
+            cuota = 500;
+        } else {
+            cuota = 350;
+        }
+    </script>
 
 </head>
 
