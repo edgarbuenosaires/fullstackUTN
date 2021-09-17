@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2</title>
+    <script type="text/javascript">
+        //Crear el código que reciba como parámetro un array de números y devuelva el mayor.
+        var num;
+        var numeros = [];
+        var numMayor;
+        num = parseInt(prompt('Ingrese un numero (cero para terminar)', ''));
+        console.log(num);
+        while (num != '0') {
+            numeros.push([num]);
+            for (var i = 0; i < numeros.lenght; i++) {
+                if (numeros[i] > numMayor) {
+                    numMayor = numeros[i];
+                }
+            }
+            num = parseInt(prompt('Ingrese un numero (cero para terminar)', ''));
+        }
+        document.write('El mayor numero ingresado es: ' + numMayor)
+        console.log(numeros)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
