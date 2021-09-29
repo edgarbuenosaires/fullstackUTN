@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
 </head>
+
 <body>
-	<h1>Formulario</h1>
+    <h1>Formulario</h1>
     <form action="enviar.php" id="formulario">
         <p>
             <label>Nombre: <input name="nombre" type="text"></label>
@@ -21,12 +23,12 @@
     </form>
 
     <script>
-    	 // formulario
+        // formulario
         var formulario = document.getElementById('formulario');
-        formulario.addEventListener('submit', function(e) {
+        formulario.addEventListener('submit', function (e) {
             e.preventDefault();
-            
-            if(e.target.nombre.value == '') {
+
+            if (e.target.nombre.value == '') {
                 alert('El campo nombre es requerido');
                 return;
             }
@@ -38,7 +40,8 @@
 
             alert('Gracias ' + e.target.nombre.value + ' por enviarnos "' + e.target.mensaje.value + '"');
         });
-    	
+
     </script>
 </body>
+
 </html>
