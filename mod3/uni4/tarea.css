@@ -1,0 +1,24 @@
+.cuadroAzul{
+    background-color: blue;
+    border-style: solid;
+    height: 200px;
+    width: 200px;
+    display: inline-flex;
+    flex-direction:row;
+}
+.cuadroVerde{
+    background-color: green;
+    border-style: solid;
+    height: 200px;
+    width: 200px;
+    display: inline-flex;
+    flex-direction:row;
+}
+.cuadroRojo{
+    background-color: red;
+    border-style: solid;
+    height: 200px;
+    width: 200px;
+    display: inline-flex;
+    flex-direction:row;
+}
