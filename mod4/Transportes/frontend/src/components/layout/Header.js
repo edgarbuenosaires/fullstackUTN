@@ -1,7 +1,14 @@
 import React from 'react';
 const Header = (props) => {
     return (
-        <div>Header</div>
+        <header>
+            <div className="Holder">
+                <div className="logo">
+                    <img src="images/logo.png" width="100" alt="Tranpsotes X" />
+                    <h1>Transportes X</h1>
+                </div>
+            </div>
+        </header>
     );
 }
 export default Header;
