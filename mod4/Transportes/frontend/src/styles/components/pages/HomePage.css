@@ -1,43 +1,37 @@
+/* Inicio HOME */
 .homeing{
-    clear: both;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5em; /*Separo la imagen de lo que viene despues*/
 }
-
-.bienvenidos{
-    width: 75%;
-    padding-right: 2em;
-    float: left;
+.homeing img{
+    max-width: 100%;
 }
-
+.columnas{
+    overflow: hidden;
+}
 .bienvenidos, .testimonios{
-    display: inline-block;
-    box-sizing: border-box;
+    box-sizing: border-box; /*Se redimenciona el tema de la cajas*/
 }
-
-.bienvenidos p{
-    font-size: 1.3em;
+.bienvenidos{
+    width: 75%; /*Ancho que ocupa el espacio de bienvenidos*/
+    padding-right: 2em;
 }
-
 .testimonios{
-    width: 25%;
-    float: right;
+    width: 25%; /*Ancho que ocupa el espacio de testimonios*/
 }
-
 .testimonio{
-    background: #ddd;
+    background-color: #ccc;
     padding: 1em;
 }
-
 .testimonio .cita{
     font-weight: bold;
     font-style: italic;
     font-size: 1.4em;
     display: block;
 }
-
 .testimonio .autor{
     font-size: 0.7em;
-    display: block;
     text-align: center;
     margin: 1em 0;
+    display: block;
 }
+/* Fin HOME */

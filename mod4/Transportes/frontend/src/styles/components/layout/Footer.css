@@ -1,9 +1,10 @@
 footer{
-    background: #ccc;
+    background-color: #ccc;
     clear: both;
     color: #333;
-    padding: 3em 0;
+    padding: 3em 0; /*Es el alto del footer, el area griz*/
     margin-top: 2em;
+    text-align: center;
 }
 
 footer p{
