@@ -16,14 +16,14 @@ function App() {
     <Router>
       <Header />
       <Nav />
-      <Footer />
+      
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/nosotros" exact component={NosotrosPage} />
         <Route path="/novedades" exact component={NovedadesPage} />
         <Route path="/contacto" exact component={ContactoPage} />
       </Switch>
-      
+      <Footer />
     </Router>
     // <div className="App">
     //   </Header>

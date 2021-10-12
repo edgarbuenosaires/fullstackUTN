@@ -1,10 +1,12 @@
 import React from "react";
 
+import '../styles/components/pages/NosotrosPage.css';
+
 const NosotrosPage = (props) => {
     return (
         <section className="holder">
             <div className="hostoria">
-                <h2>Hostoria</h2>
+                <h2>Historia</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut perspiciatis reiciendis quam atque fuga quod?
                     Id obcaecati tempora optio sunt quia. Aperiam amet vel quaerat exercitationem, delectus minus. Saepe,
                     cumque.</p>
