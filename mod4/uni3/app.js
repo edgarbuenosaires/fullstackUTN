@@ -30,8 +30,8 @@ app.use('/nosotros', nosotrosRouter);
 app.use('/servicios', serviciosRouter);
 app.use('/contacto', contactoRouter);
 
-app.get('/prueba', function(rec,res){ //cuando la peticion es barra prueba, se muestra el hola
-  res.send('Hola soy la pagina de prueba')
+app.get('/prueba', function(rec,res){ //cuando la peticion es barra prueba, se muestra el hola...
+  res.send('Hola soy la pagina de prueba');
 });
 
 // catch 404 and forward to error handler
