@@ -1,0 +1,223 @@
+Tarea Unidad 2: Introducción al lenguaje SQL
+En base a la base de datos creada en la anterior unidad, trabajar con la tabla empleados, realizando las siguientes consultas.
+
+En caso de no tener cargados los datos en la tabla podemos usar las consultas del archivo empleados.txt para generar los registros que nos servirán para hacer esta tarea.
+
+1)  ¿Cuáles son los nombres y la ocupación de cada uno de los empleados?
+
+    MySQL/ejercicio/empleados/		http://localhost/phpmyadmin/tbl_sql.php?db=ejercicio&table=empleados
+    Mostrando filas 0 - 20 (total de 21, La consulta tardó 0,0013 segundos.)
+
+    SELECT nombre, trabajo FROM empleados
+
+    nombre	trabajo	
+    Juan	Programador Senior	
+    Gonzalo	Programador Senior	
+    Ana	Desarrollador Web	
+    Maria	Desarrollador Web	
+    Alfredo	Programador	
+    Juan	Programador	
+    Eduardo	Programador	
+    Alejandro	Programador	
+    Hernan	Especialista Multimedia	
+    Paublo	Especialista Multimedia	
+    Arturo	Especialista Multimedia	
+    Jimena	Diseñador Web Senior	
+    Roberto	Administrador de Sistemas	
+    Daniel	Administrador de Sistemas	
+    Miguel	Ejecutivo de Ventas Senior	
+    Monica	Ejecutivo de Ventas	
+    Alicia	Ejecutivo de Ventas	
+    Jose	Ejecutivo de Ventas	
+    Sabrina	Gerente de Soporte Tecnico	
+    Pedro	Gerente de Finanzas	
+    Mariano	Presidente	
+
+2)  ¿Cuál es el nombre y la edad de cada uno de los empleados?
+
+    MySQL/ejercicio/empleados/		http://localhost/phpmyadmin/tbl_sql.php?db=ejercicio&table=empleados
+    Mostrando filas 0 - 20 (total de 21, La consulta tardó 0,0005 segundos.)
+
+    SELECT nombre, edad FROM empleados
+
+    nombre	edad	
+    Juan	32	
+    Gonzalo	32	
+    Ana	27	
+    Maria	26	
+    Alfredo	31	
+    Juan	34	
+    Eduardo	25	
+    Alejandro	32	
+    Hernan	33	
+    Paublo	43	
+    Arturo	32	
+    Jimena	32	
+    Roberto	35	
+    Daniel	34	
+    Miguel	36	
+    Monica	30	
+    Alicia	27	
+    Jose	27	
+    Sabrina	32	
+    Pedro	36	
+    Mariano	28	
+
+3)  ¿Cuál es el nombre y la edad de todos los programadores?
+
+    MySQL/ejercicio/empleados/		http://localhost/phpmyadmin/tbl_sql.php?db=ejercicio&table=empleados
+    Mostrando filas 0 -  5 (total de 6, La consulta tardó 0,0005 segundos.)
+
+    SELECT nombre, edad FROM empleados WHERE trabajo LIKE'programador%'
+
+    nombre	edad	
+    Juan	32	
+    Gonzalo	32	
+    Alfredo	31	
+    Juan	34	
+    Eduardo	25	
+    Alejandro	32	
+
+4)  ¿Cuáles son los empleados de mas de 30 años?
+
+    MySQL/ejercicio/empleados/		http://localhost/phpmyadmin/tbl_sql.php?db=ejercicio&table=empleados
+    Mostrando filas 0 - 13 (total de 14, La consulta tardó 0,0015 segundos.)
+
+    SELECT nombre, edad FROM empleados WHERE edad>30
+
+
+    nombre	edad	
+    Juan	32	
+    Gonzalo	32	
+    Alfredo	31	
+    Juan	34	
+    Alejandro	32	
+    Hernan	33	
+    Paublo	43	
+    Arturo	32	
+    Jimena	32	
+    Roberto	35	
+    Daniel	34	
+    Miguel	36	
+    Sabrina	32	
+    Pedro	36	
+
+5)  ¿Cuál es el apellido y el mail de los empleados llamados Juan?
+
+    MySQL/ejercicio/empleados/		http://localhost/phpmyadmin/tbl_sql.php?db=ejercicio&table=empleados
+    Mostrando filas 0 -  1 (total de 2, La consulta tardó 0,0004 segundos.)
+
+    SELECT apellido, mail FROM empleados WHERE nombre = 'Juan'
+
+    apellido	mail	
+    Hagan	juan_hagan@bignet.com	
+    Aguero	juan@bignet.com	
+
+6)  ¿Cuál es el nombre de las personas que trabajan como Programadores o Desarrolladores Web?
+
+    MySQL/ejercicio/empleados/		http://localhost/phpmyadmin/tbl_sql.php?db=ejercicio&table=empleados
+    Mostrando filas 0 -  7 (total de 8, La consulta tardó 0,0005 segundos.)
+
+    SELECT nombre, trabajo FROM empleados WHERE trabajo LIKE'programador%' OR trabajo LIKE 'Desarrollador web%'
+
+
+    nombre	trabajo	
+    Juan	Programador Senior	
+    Gonzalo	Programador Senior	
+    Ana	Desarrollador Web	
+    Maria	Desarrollador Web	
+    Alfredo	Programador	
+    Juan	Programador	
+    Eduardo	Programador	
+    Alejandro	Programador	
+
+7)  Mostrar una lista (id_emp, nombre, apellido, trabajo) de las personas cuyo numero de empleado esté entre 15 y 20.
+
+    MySQL/ejercicio/empleados/		http://localhost/phpmyadmin/tbl_sql.php?db=ejercicio&table=empleados
+    Mostrando filas 0 -  5 (total de 6, La consulta tardó 0,0088 segundos.)
+
+    SELECT id_emp, nombre, apellido, trabajo FROM empleados WHERE id_emp BETWEEN 15 and 20
+
+    id_emp	nombre	apellido	trabajo	
+    15	Miguel	Harper	Ejecutivo de Ventas Senior	
+    16	Monica	Sanchez	Ejecutivo de Ventas	
+    17	Alicia	Simlai	Ejecutivo de Ventas	
+    18	Jose	Iriarte	Ejecutivo de Ventas	
+    19	Sabrina	Allende	Gerente de Soporte Tecnico	
+    20	Pedro	Campion	Gerente de Finanzas	
+
+8)  ¿Cuáles son los Programadores que ganan menos de $80000?
+
+    MySQL/ejercicio/empleados/		http://localhost/phpmyadmin/tbl_sql.php?db=ejercicio&table=empleados
+    Mostrando filas 0 -  2 (total de 3, La consulta tardó 0,0005 segundos.)
+
+    SELECT nombre, apellido FROM empleados WHERE trabajo LIKE 'programa%' AND salario <80000
+
+    nombre	apellido	
+    Alfredo	Fernandez	
+    Eduardo	Sacan	
+    Alejandro	Nanda	
+
+9)  ¿Cuáles son los Programadores que ganan entre $75000 y  $90000?
+
+    MySQL/ejercicio/empleados/		http://localhost/phpmyadmin/tbl_sql.php?db=ejercicio&table=empleados
+    Mostrando filas 0 -  2 (total de 3, La consulta tardó 0,0005 segundos.)
+
+    SELECT nombre, apellido, trabajo, salario FROM empleados WHERE trabajo LIKE 'programa%' AND salario BETWEEN 75000 AND 90000
+
+    nombre	apellido	trabajo	salario	
+    Alfredo	Fernandez	Programador	75000	
+    Juan	Aguero	Programador	80000	
+    Eduardo	Sacan	Programador	75000	
+
+10) ¿Cuáles son los trabajadores cuyo apellido comienza con S?
+
+    MySQL/ejercicio/empleados/		http://localhost/phpmyadmin/tbl_sql.php?db=ejercicio&table=empleados
+    Mostrando filas 0 -  3 (total de 4, La consulta tardó 0,0005 segundos.)
+
+    SELECT nombre, apellido FROM empleados WHERE apellido LIKE 's%'
+
+    nombre	apellido	
+    Eduardo	Sacan	
+    Paublo	Simon	
+    Monica	Sanchez	
+    Alicia	Simlai	
+
+11) ¿Cuáles son los trabajadores cuyo nombre termina en l?
+
+    MySQL/ejercicio/empleados/		http://localhost/phpmyadmin/tbl_sql.php?db=ejercicio&table=empleados
+    Mostrando filas 0 -  1 (total de 2, La consulta tardó 0,0007 segundos.)
+
+    SELECT nombre, apellido FROM empleados WHERE nombre LIKE '%l'
+
+    nombre	apellido	
+    Daniel	Gutierrez	
+    Miguel	Harper	
+
+12) Agregar un empleado con ID_empleado 22 con los siguientes datos: Francisco Perez,  Programador, 26 años, salario 90000, mail: francisco@bignet.com.
+
+    INSERT INTO empleados VALUES (22, 'Francisco', 'Perez', 'Programador', 26, 90000, 'francisco@bignet.com')
+
+    MySQL/ejercicio/empleados/		http://localhost/phpmyadmin/tbl_sql.php?db=ejercicio&table=empleados
+    Mostrando filas 0 -  0 (total de 1, La consulta tardó 0,0005 segundos.)
+
+    SELECT * FROM empleados WHERE id_emp=22
+
+    22	Francisco	Perez	Programador	26	90000	francisco@bignet.com	
+
+13) Borrar los datos de Hernan Rosso.
+
+    DELETE FROM empleados WHERE nombre = 'Hernan' and apellido = 'Rosso'
+
+14) Modificar el salario de Daniel Gutierrez a 90000.
+
+    MySQL/ejercicio/empleados/		http://localhost/phpmyadmin/tbl_sql.php?db=ejercicio&table=empleados
+    0 filas afectadas. (La consulta tardó 0,0034 segundos.)
+
+    Mostrando filas 0 -  0 (total de 1, La consulta tardó 0,0006 segundos.)
+
+    UPDATE empleados SET salario=90000 WHERE nombre='Daniel' and apellido = 'Gutierrez';
+
+    SELECT nombre, apellido, salario FROM empleados WHERE nombre='Daniel' and apellido = 'Gutierrez'
+
+    Daniel	Gutierrez	90000	
