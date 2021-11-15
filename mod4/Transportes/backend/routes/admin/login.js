@@ -8,7 +8,15 @@ router.get('/', function (req, res, next) {
         layout: 'admin/layout'
     });
 });
+// Logout
+router.get('/logout', function (req, res, next) {
+    req.session.destroy(); // destruir las varaibles de sesion (id y usario)
+    res.render('admin/login', {
+        layout: 'admin/layout'
+    });
+}) // cierro logout
 
+// Login
 router.post('/', async (req, res, next) => {
     try {
         var usuario = req.body.usuario; //flavia
