@@ -4,6 +4,11 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+//Subida de imagenes
+var fileUpload = require('express-fileupload');
+
+var cors = require('cors');
+
 //Conectamos con el .env de la BD
 require('dotenv').config();
 
@@ -16,6 +21,8 @@ var usersRouter = require('./routes/users');
 // Login
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
+
+var apiRouter = require('./routes/api');
 
 var app = express();
 
@@ -49,11 +56,18 @@ secured = async (req, res, next) => {
   }//cierro catch error
 }// cierro secured
 
+app.use(fileUpload({
+  useTempFiles: true,
+  tempFileDir: '/tem/'
+}))
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades', secured, adminRouter);
+
+app.use('/api', cors(), apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
