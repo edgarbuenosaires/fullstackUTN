@@ -8,8 +8,8 @@ const destroy = util.promisify(cloudinary.uploader.destroy);
 
 // Mostrar Novedades
 router.get('/', async function (req, res, next) {
-
     var novedades = await novedadesModel.getNovedades();
+
     novedades = novedades.map(novedad => {
         if (novedad.img_id) {
             const imagen = cloudinary.image(novedad.img_id, {
@@ -29,13 +29,13 @@ router.get('/', async function (req, res, next) {
         }
     })
 
-
     res.render('admin/novedades', {
         layout: 'admin/layout',
         usuario: req.session.nombre,
         novedades
     });
 });
+
 // Agregar Novedades
 
 router.get('/agregar', (req, res, next) => {
@@ -59,8 +59,6 @@ router.post('/agregar', async (req, res, next) => {
                 img_id
             });
 
-
-
             res.redirect('/admin/novedades')
         } else {
             res.render('admin/agregar', {
@@ -83,6 +81,7 @@ router.post('/agregar', async (req, res, next) => {
 
 router.get('/eliminar/:id', async (req, res, next) => {
     var id = req.params.id;
+    
     let novedad = await novedadesModel.getNovedadesById(id);
     if (novedad.img_id) {
         await (destroy(novedad.img_id));
