@@ -1,0 +1,273 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0;
+    
+}
+header{
+    background-color: #E69031;
+    padding: 0.5em 0;
+}
+header h1{
+    color: black;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    position: relative;
+}
+
+nav{
+    background-color: #f0bc83;
+    margin-bottom: 2em;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+    width: 19.5%;
+}
+nav ul li a{
+    color: #545151;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.2em 0.4em;
+}
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+nav ul li a.activo{
+    background-color: #E67E22;
+    font-weight: bold;
+}
+footer{
+    background-color: rgb(148, 143, 143);
+    clear: both;
+    color: rgb(34, 34, 34);
+    padding: 1em 0;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.holder{
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+/* <<<<<<<<<<<<< HOME >>>>>>>>>>>>> */
+.homeing{
+    margin-bottom: 1.5em; /*Separo la imagen de lo que viene despues*/
+}
+.homeing img{
+    height: 200px;
+    margin: 0 0;
+    width: 33%;   
+}
+main h3{
+    text-align: left;
+}
+.bienvenida {
+    width: 100%;
+    color: black;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 3em 0;
+    transition: all 1.3s ease;
+}
+@keyframes bienvenida {
+    15% {transform: translateX(5px); color: orange;}
+    30% {transform: translateX(-5px); color: gray;}
+    50% {transform: translateX(5px); color: black;}
+    65% {transform: translateX(-5px); color: orange;}
+    80% {transform: translateX(5px); color: gray;}
+    100% {transform: translateX(0);}
+}
+.bienvenida{
+    animation: bienvenida 1s ease-in-out;
+    animation-iteration-count: infinite;
+}
+.testimonios{
+    padding-bottom: 27em;
+}
+
+.testimonios h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.testimonio{
+    border: 1.5px solid orange;
+    border-radius: 1em;
+    margin: 1em 0;
+    padding: 0.5em 0.5em ;
+    width: 45%;
+}
+.testimonio .info{
+    width: 60%;
+    float: right;
+}
+.testimonio .info p{
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+.testimonio img{
+    border-radius: 0.8em;
+    box-shadow: 0 0 5px rgba(0,0, 0, 0.5);
+    max-width: 30%;
+}
+.testimonio:nth-child(even){
+    float: left;
+}
+.testimonio:nth-child(odd){
+    float: right;
+}
+
+/* <<<<<<<<<<<<< STAFF >>>>>>>>>>>>> */
+
+.entrenadores{
+    overflow: hidden;
+   
+}
+.staff h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 1em;
+}
+.entrenador{
+    width: 31%;
+    border: 1.5px solid orange;
+    border-radius: 0.25em;
+    float: left;
+    margin-left: 2.25%;
+    box-sizing: border-box;
+}
+.entrenador{
+    text-align: center;
+}
+.entrenador img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 1em 0 1em;
+}
+.entrenador h5{
+    font-size: 1.8em;
+}
+.entrenador h6{
+    color: gray;
+    font-size: 1.3em;
+    font-style: italic;
+}
+.entrenador p{
+    font-size: 1em;
+    color:lightslategray;
+    margin: 0 1em 1em;
+}
+.entrenador:first-child{
+    margin-left: 0;
+}
+
+/* <<<<<<<<<<<<< ACTIVIDADES >>>>>>>>>>>>> */
+
+.actividad{
+    border: 2px solid orange;
+    border-radius: 0.7em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+}
+.actividades h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 1em;
+}
+.actividad .info h4{
+    color: rgb(202, 138, 19);
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5em;
+}
+.actividad .info p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+.actividad .info{
+    width: 65%;
+}
+.actividad img{
+    border-radius: 0.8em;
+    width: 30%;
+}
+.actividad:nth-child(even) img{
+    float: right;
+    margin: 0 0 0 1em;
+}
+.actividad:nth-child(even) .info{
+    float: left;
+}
+.actividad:nth-child(odd) img{
+    float: left;
+    margin: 0 1em 0 0;
+}
+.actividad:nth-child(odd) .info{
+    float: right;
+}
+
+/* <<<<<<<<<<<<< MEALS >>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<< CONTACTO >>>>>>>>>>>>> */
+
+.columna{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0.6em;
+    display: inline-block;
+}
+.columna.left{
+    border-right: 2px solid orange;
+}
+.columna.right{
+    float: right
+}
+.columna.right ul li{
+    font-size: 1em;
+    line-height: 40px;
+}
+.formulario label{
+    vertical-align: top;
+    width: 20%;
+    display: inline-block;
+}
+.formulario input,
+.formulario textarea{
+    background-color: rgba(250, 227, 184, 0.904);
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;
+    width: 70%;
+}
+.formulario input[type="submit"]{
+    background-color: orange;
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.4);
+    color: white;
+    font-size: 1em;
+    width: auto;
+    cursor: pointer;
+}
+.formulario textarea{
+    height: 10em;
+    resize: none;
+}
+.formulario .acciones{
+    text-align: center;
+}
+
+
+
