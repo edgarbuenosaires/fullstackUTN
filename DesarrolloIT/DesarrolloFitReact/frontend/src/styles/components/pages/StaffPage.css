@@ -1,0 +1,41 @@
+.entrenadores{
+    overflow: hidden;
+   
+}
+.staff h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 1em;
+}
+.entrenador{
+    width: 31%;
+    border: 1.5px solid orange;
+    border-radius: 0.25em;
+    float: left;
+    margin-left: 2.25%;
+    box-sizing: border-box;
+}
+.entrenador{
+    text-align: center;
+}
+.entrenador img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 1em 0 1em;
+}
+.entrenador h5{
+    font-size: 1.8em;
+}
+.entrenador h6{
+    color: gray;
+    font-size: 1.3em;
+    font-style: italic;
+}
+.entrenador p{
+    font-size: 1em;
+    color:lightslategray;
+    margin: 0 1em 1em;
+}
+.entrenador:first-child{
+    margin-left: 0;
+}

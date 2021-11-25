@@ -1,0 +1,65 @@
+.homeing{
+    margin-bottom: 1.5em; /*Separo la imagen de lo que viene despues*/
+}
+.homeing img{
+    height: 200px;
+    margin: 0 0;
+    width: 33%;   
+}
+main h3{
+    text-align: left;
+}
+.bienvenida {
+    width: 100%;
+    color: black;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 3em 0;
+    transition: all 1.3s ease;
+}
+@keyframes bienvenida {
+    15% {transform: translateX(5px); color: orange;}
+    30% {transform: translateX(-5px); color: gray;}
+    50% {transform: translateX(5px); color: black;}
+    65% {transform: translateX(-5px); color: orange;}
+    80% {transform: translateX(5px); color: gray;}
+    100% {transform: translateX(0);}
+}
+.bienvenida{
+    animation: bienvenida 1s ease-in-out;
+    animation-iteration-count: infinite;
+}
+.testimonios{
+    padding-bottom: 27em;
+}
+
+.testimonios h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.testimonio{
+    border: 1.5px solid orange;
+    border-radius: 1em;
+    margin: 1em 0;
+    padding: 0.5em 0.5em ;
+    width: 45%;
+}
+.testimonio .info{
+    width: 60%;
+    float: right;
+}
+.testimonio .info p{
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+.testimonio img{
+    border-radius: 0.8em;
+    box-shadow: 0 0 5px rgba(0,0, 0, 0.5);
+    max-width: 30%;
+}
+.testimonio:nth-child(even){
+    float: left;
+}
+.testimonio:nth-child(odd){
+    float: right;
+}

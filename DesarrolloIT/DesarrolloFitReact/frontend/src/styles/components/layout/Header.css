@@ -1,0 +1,15 @@
+header{
+    background-color: #E69031;
+    padding: 0.5em 0;
+}
+header h1{
+    color: black;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    position: relative;
+}
+header h4{
+    text-align: center;
+    position: relative;
+}

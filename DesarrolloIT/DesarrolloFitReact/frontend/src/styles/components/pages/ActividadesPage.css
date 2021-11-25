@@ -1,0 +1,45 @@
+.actividad{
+    border: 2px solid orange;
+    border-radius: 0.7em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+}
+.actividades h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 1em;
+}
+.actividad .info h4{
+    color: rgb(202, 138, 19);
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5em;
+}
+.actividad .info p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+.actividad .info{
+    width: 65%;
+}
+.actividad img{
+    border-radius: 0.8em;
+    width: 30%;
+}
+.actividad:nth-child(even) img{
+    float: right;
+    margin: 0 0 0 1em;
+}
+.actividad:nth-child(even) .info{
+    float: left;
+}
+.actividad:nth-child(odd) img{
+    float: left;
+    margin: 0 1em 0 0;
+}
+.actividad:nth-child(odd) .info{
+    float: right;
+}
