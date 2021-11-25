@@ -27,6 +27,6 @@ const HomePage = (props) => {
                 </div>
             </div>
         </main>
-    );
+            );
 }
 export default HomePage;
