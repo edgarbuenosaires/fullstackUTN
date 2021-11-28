@@ -65,7 +65,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 app.use('/admin/login', loginRouter);
-app.use('/admin/novedades', adminRouter);
+app.use('/admin/novedades', secured, adminRouter);
 
 app.use('/api', cors(), apiRouter);
 
