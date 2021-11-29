@@ -1,0 +1,38 @@
+<div class="container" style="margin:50px auto">
+    <div class="row">
+        <div class="form-floating">
+            <h4>Modificar Meals</h4>
+            <form action="/admin/meals/modificar" method="post">
+                {{!-- enctype="multipart/form-data" --}}
+                <input type="hidden" value="{{meal.id}}" name="id">
+                <div class="form-group">
+                    <label for="">Plato</label>
+                    <input type="text" value="{{meal.plato}}" class="form-control" name="plato">
+                </div>
+                <div class="form-gropu">
+                    <label for="">Preparacion</label>
+                    <textarea class="form-control" name="preparacion" type="text"
+                        style="height: 100px">{{meal.preparacion}}</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Cuerpo</label>
+                    <textarea class="form-control" name="cuerpo" style="height: 100px">{{meal.cuerpo}}</textarea>
+                </div>
+                {{!-- <div class="form-group">
+                    <p>
+                        <label>Imagen:<input type="file" name="imagen" id="imagen" /></label>
+                    </p>
+                    <p>
+                        <label><input type="checkbox" name="img_delete" id="img_delete" value="1">
+                            Eliminar imagen actual?</label>
+                        <input type="hidden" name="img_original" value="{{novedad.img.id}}">
+                    </p>
+                </div> --}}
+                <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+            {{#if error}}
+            <h5>{{message}}</h5>
+            {{/if}}
+        </div>
+    </div>
+</div>
