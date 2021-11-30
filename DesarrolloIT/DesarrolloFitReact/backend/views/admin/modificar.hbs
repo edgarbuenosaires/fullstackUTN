@@ -2,8 +2,7 @@
     <div class="row">
         <div class="form-floating">
             <h4>Modificar Meals</h4>
-            <form action="/admin/meals/modificar" method="post">
-                {{!-- enctype="multipart/form-data" --}}
+            <form action="/admin/meals/modificar" method="post" enctype="multipart/form-data">
                 <input type="hidden" value="{{meal.id}}" name="id">
                 <div class="form-group">
                     <label for="">Plato</label>
@@ -18,16 +17,16 @@
                     <label for="">Cuerpo</label>
                     <textarea class="form-control" name="cuerpo" style="height: 100px">{{meal.cuerpo}}</textarea>
                 </div>
-                {{!-- <div class="form-group">
+                <div class="form-group">
                     <p>
                         <label>Imagen:<input type="file" name="imagen" id="imagen" /></label>
                     </p>
                     <p>
-                        <label><input type="checkbox" name="img_delete" id="img_delete" value="1">
+                        <label><input type="checkbox" name="img_delete" id="img_delete" value='1'>
                             Eliminar imagen actual?</label>
-                        <input type="hidden" name="img_original" value="{{novedad.img.id}}">
+                        <input type="hidden" name="img_original" value="{{meal.img_id}}">
                     </p>
-                </div> --}}
+                </div>
                 <button type="submit" class="btn btn-primary">Modificar</button>
             </form>
             {{#if error}}

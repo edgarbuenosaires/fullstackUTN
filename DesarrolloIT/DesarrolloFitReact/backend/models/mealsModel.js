@@ -20,7 +20,7 @@ async function insertMeals(obj) {
     }
 }
 
-// Funcion para eliminar novedades
+// Funcion para eliminar Meals
 
 async function deleteMealById(id) {
     var query = 'delete from meals where id = ? ';
@@ -28,7 +28,7 @@ async function deleteMealById(id) {
     return rows;
 }
 
-// Funcion obtener noticia unica utilizando ID
+// Funcion obtener meal unica utilizando ID
 
 async function getMealById(id) {
     var query = 'select * from meals where id = ? ';
@@ -36,11 +36,11 @@ async function getMealById(id) {
     return rows[0];
 }
 
-// Funcion para modificar campos de novedad seleccionada por ID
+// Funcion para modificar campos de meal seleccionada por ID
 
 async function modificarMealById(obj, id) {
     try {
-        var query = 'update meals set ? where id = ? ';
+        var query = 'update meals set ? where id=?';
         var rows = await pool.query(query, [obj, id]);
         return rows;
     } catch (error) {
